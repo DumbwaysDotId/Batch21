@@ -8,6 +8,7 @@ import './App.css';
 //Import Components
 import Content from './components/content';
 import Header from './components/header';
+import Increment from './pages/increment';
 
 
 function App(){
@@ -16,6 +17,7 @@ function App(){
       <Header lalala="Convert Title By Props"
               lalala2="This 2 Props for Child"/>
       <Content />
+      <Increment />
     </div>
   )
 }
