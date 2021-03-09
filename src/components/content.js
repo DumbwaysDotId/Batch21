@@ -20,6 +20,8 @@ function Content(){
             <p>Welcome {title} Batch {getBatch()}</p>
 
             <button onClick={cobaAlert}>Hit Me</button>
+
+            <img src="https://pbs.twimg.com/media/DwzuRuhU8AAi81E.jpg" style={{width: 250, height: 350, marginTop: 10}}/>
         </div>
     )
 }

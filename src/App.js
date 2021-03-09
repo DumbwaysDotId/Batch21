@@ -13,7 +13,8 @@ import Header from './components/header';
 function App(){
   return(
     <div>
-      <Header />
+      <Header lalala="Convert Title By Props"
+              lalala2="This 2 Props for Child"/>
       <Content />
     </div>
   )
