@@ -6,7 +6,7 @@ import '../App.css';
 //     constructor(){
 //         super()
 //         this.state = {
-//             counter : 0
+//             counter : 0,
 //         }
 //         this.handleCounter = this.handleCounter.bind(this)
 //     }
@@ -42,6 +42,10 @@ function Increment(){
         setCounter(counter + 1)
     }
 
+    function handleDecrement(){
+        setCounter(counter - 1)
+    }
+
     return(
         <div className="App-header">
                  <p>If You Click a Button to Increment</p>
@@ -50,7 +54,14 @@ function Increment(){
 
                 <p>{counter}</p>
 
-                 <button style={{marginTop:20}} onClick={handleCounter}>Hit Me !</button>
+                <button style={{marginTop:20}} onClick={() => setCounter(counter + 1)}>Increment</button>
+
+                <button style={{marginTop:20}} onClick={() => setCounter(counter - 1)}>Decrement</button>
+
+                 {/* <button style={{marginTop:20}} onClick={handleCounter}>Hit Me !</button> */}
+
+
+                 {/* <button style={{marginTop:20}} onClick={handleDecrement}>Decrement</button> */}
              </div>
     )
 }
